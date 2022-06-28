@@ -9,10 +9,10 @@ public class App {
     public static void main(String[] args) {
         User mod = new User();
         ConsultaUsuario modC = new ConsultaUsuario();
-        frmUsuario frm = new frmUsuario();
+        frmUsuario frm = new frmUsuario(null);
 
         CtrlUsuario ctrl = new CtrlUsuario(mod, modC, frm);
-        frm.setVisible(true);
         ctrl.iniciar();
+        frm.setVisible(true);
     }
 }

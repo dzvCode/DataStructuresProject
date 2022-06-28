@@ -38,7 +38,7 @@ public class CtrlUsuario implements ActionListener {
             mod.setEmail(frm.txtEmail.getText());
             mod.setPhone(frm.txtPhone.getText());
             mod.setAddress(frm.txtAddress.getText());
-            //mod.setPassword(frm.txt.getText());
+            mod.setPassword(frm.txtPassword.getText());
 
             if (modC.registrar(mod)) {
                 JOptionPane.showMessageDialog(null, "Registro guardado");
@@ -55,7 +55,7 @@ public class CtrlUsuario implements ActionListener {
             mod.setEmail(frm.txtEmail.getText());
             mod.setPhone(frm.txtPhone.getText());
             mod.setAddress(frm.txtAddress.getText());
-            //mod.setPassword(frm.txt.getText());
+            mod.setPassword(frm.txtPassword.getText());
 
             if (modC.registrar(mod)) {
                 JOptionPane.showMessageDialog(null, "Registro modificado");
@@ -87,6 +87,7 @@ public class CtrlUsuario implements ActionListener {
                 frm.txtEmail.setText(mod.getEmail());
                 frm.txtPhone.setText(mod.getPhone());
                 frm.txtAddress.setText(mod.getAddress());
+                frm.txtPassword.setText(mod.getPassword());
             } else {
                 JOptionPane.showMessageDialog(null, "No se encontro registro");
                 limpiar();
@@ -104,6 +105,7 @@ public class CtrlUsuario implements ActionListener {
         frm.txtEmail.setText(null);
         frm.txtPhone.setText(null);
         frm.txtAddress.setText(null);
+        frm.txtPassword.setText(null);
     }
 
 }
