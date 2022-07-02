@@ -21,7 +21,8 @@ public class frmUsuario extends JDialog{
         super(parent);
         setTitle("Registar usuairio");
         setContentPane(panelUsuario);
-        setMinimumSize(new Dimension(800, 600));
+        setMinimumSize(new Dimension(500, 500));
+        setResizable(false);
         setModal(true);
         setLocationRelativeTo(parent);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
