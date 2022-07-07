@@ -1,4 +1,4 @@
-package com.mvc.model;
+package com.grupo4.model.conn;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
